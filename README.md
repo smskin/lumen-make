@@ -19,7 +19,7 @@ Uncomment line in bootstrap/app.php
 $app->register(App\Providers\EventServiceProvider::class);
 ```
 
-Add line to bootstrap/app.php form enable generators
+Add line to bootstrap/app.php for enable generators
 ```php
 //for enable generator permanently
 $app->register(SMSkin\LumenMake\LumenMakeServiceProvider::class);

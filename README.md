@@ -23,6 +23,7 @@ Add line to bootstrap/app.php for enable generators
 ```php
 //for enable generator permanently
 $app->register(SMSkin\LumenMake\LumenMakeServiceProvider::class);
+
 //for enable generator in development mode
 if (env('APP_ENV') != 'production' || env('APP_ENV') == 'local') {
     $app->register(SMSkin\LumenMake\LumenMakeServiceProvider::class);
@@ -37,7 +38,9 @@ $app->register(SMSkin\LumenMake\Providers\FormRequestServiceProvider::class);
 ## Requests info
 In generated requests used FormRequest from this library. If you want migrate to Laravel framework, change use line in all generated requests
 ```php
-use SMSkin\LumenMake\Requests\FormRequest; -> use Illuminate\Foundation\Http\FormRequest;
+use SMSkin\LumenMake\Requests\FormRequest; 
+\\to
+use Illuminate\Foundation\Http\FormRequest;
 ```
 #### Commands
 * `make:job {name}` - Makes a new job class in Jobs/

@@ -1,16 +1,15 @@
 <?php
 
-namespace MichaelB\LumenMake;
+namespace SMSkin\LumenMake;
 
 use Illuminate\Support\ServiceProvider;
-use MichaelB\LumenMake\Commands\JobMakeCommand;
-use MichaelB\LumenMake\Commands\ConsoleMakeCommand;
-use MichaelB\LumenMake\Commands\ControllerMakeCommand;
-use MichaelB\LumenMake\Commands\ModelMakeCommand;
-use MichaelB\LumenMake\Commands\MiddlewareMakeCommand;
-use MichaelB\LumenMake\Commands\ExceptionMakeCommand;
-use MichaelB\LumenMake\Commands\EventMakeCommand;
-
+use SMSkin\LumenMake\Commands\JobMakeCommand;
+use SMSkin\LumenMake\Commands\ConsoleMakeCommand;
+use SMSkin\LumenMake\Commands\ControllerMakeCommand;
+use SMSkin\LumenMake\Commands\ModelMakeCommand;
+use SMSkin\LumenMake\Commands\MiddlewareMakeCommand;
+use SMSkin\LumenMake\Commands\ExceptionMakeCommand;
+use SMSkin\LumenMake\Commands\RequestMakeCommand;
 
 class LumenMakeServiceProvider extends ServiceProvider
 {
@@ -21,7 +20,7 @@ class LumenMakeServiceProvider extends ServiceProvider
         $this->commands(ControllerMakeCommand::class);
         $this->commands(ModelMakeCommand::class);
         $this->commands(MiddlewareMakeCommand::class);
+        $this->commands(RequestMakeCommand::class);
         $this->commands(ExceptionMakeCommand::class);
-        $this->commands(EventMakeCommand::class);
     }
 }

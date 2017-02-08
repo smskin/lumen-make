@@ -1,6 +1,6 @@
 <?php
 
-namespace MichaelB\LumenMake\Commands;
+namespace SMSkin\LumenMake\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 

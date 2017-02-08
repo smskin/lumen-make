@@ -1,5 +1,5 @@
 {
-    "name": "michaelb/lumen-make",
+    "name": "smskin/lumen-make",
     "description": "Lumen make adds more make commands to lumen for jobs, controllers, middleware, etc.",
     "type": "Lumen",
     "license": "MIT",
@@ -7,6 +7,10 @@
         {
             "name": "Michael Bonds",
             "email": "mbonds1219@gmail.com"
+        },
+        {
+          "name": "Sergey Mikhaylov",
+          "email": "serg@msoinvest.com"
         }
     ],
     "require": {
@@ -14,7 +18,7 @@
     },
     "autoload": {
       "psr-4": {
-        "MichaelB\\LumenMake\\": "src/"
+        "SMSkin\\LumenMake\\": "src/"
       }
     }
 }

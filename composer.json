@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-      "laravel/lumen-framework": "~5.1"
+      "laravel/lumen-framework": "~5.4.*"
     },
     "autoload": {
       "psr-4": {

@@ -1,9 +1,14 @@
 <?php
+declare(strict_types=1);
 
-namespace SMSkin\LumenMake\Commands;
+namespace Groovili\LumenMake\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 
+/**
+ * Class MiddlewareMakeCommand
+ * @package Groovili\LumenMake\Commands
+ */
 class MiddlewareMakeCommand extends GeneratorCommand
 {
     /**

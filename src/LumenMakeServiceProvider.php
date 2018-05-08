@@ -1,18 +1,24 @@
 <?php
+declare(strict_types=1);
 
-namespace SMSkin\LumenMake;
+namespace Groovili\LumenMake;
 
 use Illuminate\Support\ServiceProvider;
-use SMSkin\LumenMake\Commands\JobMakeCommand;
-use SMSkin\LumenMake\Commands\ConsoleMakeCommand;
-use SMSkin\LumenMake\Commands\ControllerMakeCommand;
-use SMSkin\LumenMake\Commands\ModelMakeCommand;
-use SMSkin\LumenMake\Commands\MiddlewareMakeCommand;
-use SMSkin\LumenMake\Commands\ExceptionMakeCommand;
-use SMSkin\LumenMake\Commands\RequestMakeCommand;
+use Groovili\LumenMake\Commands\JobMakeCommand;
+use Groovili\LumenMake\Commands\ConsoleMakeCommand;
+use Groovili\LumenMake\Commands\ControllerMakeCommand;
+use Groovili\LumenMake\Commands\ModelMakeCommand;
+use Groovili\LumenMake\Commands\MiddlewareMakeCommand;
+use Groovili\LumenMake\Commands\ExceptionMakeCommand;
+use Groovili\LumenMake\Commands\RequestMakeCommand;
 
+/**
+ * Class LumenMakeServiceProvider
+ * @package Groovili\LumenMake
+ */
 class LumenMakeServiceProvider extends ServiceProvider
 {
+
     public function register()
     {
         $this->commands(JobMakeCommand::class);

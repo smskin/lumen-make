@@ -1,11 +1,16 @@
 <?php
+declare(strict_types=1);
 
-namespace SMSkin\LumenMake\Commands;
+namespace Groovili\LumenMake\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 
+/**
+ * Class ConsoleMakeCommand
+ * @package Groovili\LumenMake\Commands
+ */
 class ConsoleMakeCommand extends GeneratorCommand
 {
     /**

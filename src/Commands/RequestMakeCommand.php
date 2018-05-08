@@ -1,15 +1,14 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: smskin
- * Date: 08.02.17
- * Time: 11:00
- */
+declare(strict_types=1);
 
-namespace SMSkin\LumenMake\Commands;
+namespace Groovili\LumenMake\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 
+/**
+ * Class RequestMakeCommand
+ * @package Groovili\LumenMake\Commands
+ */
 class RequestMakeCommand extends GeneratorCommand
 {
     /**
@@ -22,6 +21,9 @@ class RequestMakeCommand extends GeneratorCommand
      */
     protected $description = 'Make a new request.';
 
+    /**
+     * @var string
+     */
     protected $type = 'Request';
 
     /**
@@ -34,6 +36,10 @@ class RequestMakeCommand extends GeneratorCommand
         return __DIR__.'/stubs/request.stub';
     }
 
+    /**
+     * @param $namespace
+     * @return string
+     */
     protected function getDefaultNamespace($namespace)
     {
         return $namespace.'\Http\Requests';

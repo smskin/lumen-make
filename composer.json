@@ -1,5 +1,5 @@
 {
-    "name": "smskin/lumen-make",
+    "name": "groovili/lumen-make",
     "description": "Lumen make adds more make commands to lumen for jobs, controllers, middleware, etc.",
     "type": "Lumen",
     "license": "MIT",
@@ -11,6 +11,10 @@
         {
           "name": "Sergey Mikhaylov",
           "email": "serg@msoinvest.com"
+        },
+        {
+          "name": "Maxim Ivanov",
+          "email": "m.ivanov.work@gmail.com"
         }
     ],
     "require": {
@@ -18,7 +22,7 @@
     },
     "autoload": {
       "psr-4": {
-        "SMSkin\\LumenMake\\": "src/"
+        "Groovili\\LumenMake\\": "src/"
       }
     }
 }
